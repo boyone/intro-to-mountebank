@@ -1,11 +1,11 @@
 # Imposter Structure
 
 ```json
-{
+{ // imposter
   "port": <port>,
   "protocol": "http",
   "stubs": [
-    {
+    { // stub
       "predicates": [
         { "equals": { "method": <method> } },
         { "equals": { "path": <path> } },
