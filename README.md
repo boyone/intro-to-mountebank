@@ -7,7 +7,9 @@
 3. [API Submit Order](https://github.com/SCK-SEAL-TEAM-One/shopping-cart/wiki/API-Specification#api--submit-order)
 4. [API Confirm Payment](https://github.com/SCK-SEAL-TEAM-One/shopping-cart/wiki/API-Specification#api--confirm-payment)
 
-ref: [https://github.com/SCK-SEAL-TEAM-One/shopping-cart/wiki](https://github.com/SCK-SEAL-TEAM-One/shopping-cart/wiki)
+### Reference
+
+- [https://github.com/SCK-SEAL-TEAM-One/shopping-cart/wiki](https://github.com/SCK-SEAL-TEAM-One/shopping-cart/wiki)
 
 ## Getting Start
 
