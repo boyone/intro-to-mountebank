@@ -7,7 +7,6 @@
 3. [API Submit Order](https://github.com/SCK-SEAL-TEAM-One/shopping-cart/wiki/API-Specification#api--submit-order)
 4. [API Confirm Payment](https://github.com/SCK-SEAL-TEAM-One/shopping-cart/wiki/API-Specification#api--confirm-payment)
 
-
 ref: [https://github.com/SCK-SEAL-TEAM-One/shopping-cart/wiki](https://github.com/SCK-SEAL-TEAM-One/shopping-cart/wiki)
 
 ## Getting Start
@@ -22,3 +21,6 @@ ref: [https://github.com/SCK-SEAL-TEAM-One/shopping-cart/wiki](https://github.co
 1. Create API Product Detail
 2. Create API Confirm Payment
 
+---
+
+[Example](https://github.com/boyone/store-service-stub)
