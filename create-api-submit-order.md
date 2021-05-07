@@ -52,7 +52,7 @@ Add api-submit-order stub to shopping-cart.json
   "protocol": "http",
   "stubs": [
     {
-        // api product list
+      // api product list
     },
     {
       "predicates": [
@@ -61,7 +61,7 @@ Add api-submit-order stub to shopping-cart.json
         {
           "equals": {
             "headers": {
-              "Accept": "application/json"
+              "Content-Types": "application/json"
             }
           }
         },
@@ -71,7 +71,18 @@ Add api-submit-order stub to shopping-cart.json
           "equals": { "body": "2" }
         }
       ],
-      "responses": [{}]
+      "responses": [
+        {
+          "is": {
+            "statusCode": 200,
+            "headers": { "Content-Types": "application/json" },
+            "body": {
+              "order_id": 8004359122,
+              "total_price": 14.95
+            }
+          }
+        }
+      ]
     }
   ]
 }
