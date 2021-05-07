@@ -44,6 +44,8 @@
 
 ## Example
 
+Add api-submit-order stub to shopping-cart.json
+
 ```json
 {
   "port": 8000,

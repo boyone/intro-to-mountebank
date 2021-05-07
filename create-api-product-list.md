@@ -34,6 +34,8 @@
 
 ## Example
 
+Create file call shopping-cart.json and paste the content below.
+
 ```json
 {
   "port": 8000,
@@ -72,4 +74,10 @@
     }
   ]
 }
+```
+
+## Start Mountebank with imposter file
+
+```sh
+mb start --configfile shopping-cart.json
 ```
