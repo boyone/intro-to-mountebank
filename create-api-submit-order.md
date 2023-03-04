@@ -52,24 +52,9 @@ Add api-submit-order stub to shopping-cart.json
   "protocol": "http",
   "stubs": [
     {
-      // api product list
-    },
-    {
       "predicates": [
-        { "equals": { "method": "POST" } },
-        { "equals": { "path": "/api/v1/order" } },
-        {
-          "equals": {
-            "headers": {
-              "Content-Types": "application/json"
-            }
-          }
-        },
-        {
-          "jsonpath": { "selector": "$.cart[0].product_id" },
-          "caseSensitive": true,
-          "equals": { "body": "2" }
-        }
+        { "equals": { "method": "GET" } },
+        { "equals": { "path": "/api/v1/product" } }
       ],
       "responses": [
         {
@@ -77,12 +62,55 @@ Add api-submit-order stub to shopping-cart.json
             "statusCode": 200,
             "headers": { "Content-Types": "application/json" },
             "body": {
-              "order_id": 8004359122,
-              "total_price": 14.95
+              "total": 2,
+              "products": [
+                {
+                  "id": 1,
+                  "product_name": "Balance Training Bicycle",
+                  "product_price": 119.95,
+                  "product_image": "/Balance_Training_Bicycle.png"
+                },
+                {
+                  "id": 2,
+                  "product_name": "43 Piece dinner Set",
+                  "product_price": 12.95,
+                  "product_image": "/43_Piece_dinner_Set.png"
+                }
+              ]
             }
           }
         }
       ]
+    },
+    {
+        "predicates": [
+          { "equals": { "method": "POST" } },
+          { "equals": { "path": "/api/v1/order" } },
+          {
+            "equals": {
+              "headers": {
+                "Content-Type": "application/json"
+              }
+            }
+          },
+          {
+            "jsonpath": { "selector": "$.cart[0].product_id" },
+            "caseSensitive": true,
+            "equals": { "body": "2" }
+          }
+        ],
+        "responses": [
+          {
+            "is": {
+              "statusCode": 200,
+              "headers": { "Content-Type": "application/json" },
+              "body": {
+                "order_id": 8004359122,
+                "total_price": 14.95
+              }
+            }
+          }
+        ]
     }
   ]
 }
